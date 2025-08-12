@@ -41,7 +41,7 @@ const Contact = () => {
           {/* Contact Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {socialLinks.map((link, index) => (
-              <Card key={index} className="group hover:shadow-card-hover transition-all duration-300 border-0 shadow-card cursor-pointer">
+              <Card key={index} className="group hover:shadow-card-hover transition-all duration-300 border-0 shadow-card cursor-pointer" onClick={() => window.open(link.url, '_blank')}>
                 <CardContent className="p-6 text-center">
                   <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
                     <div className="text-primary">
@@ -65,13 +65,13 @@ const Contact = () => {
                 <div>
                   <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
                   <div className="space-y-4">
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 cursor-pointer hover:bg-secondary/50 p-2 rounded-lg transition-colors" onClick={() => window.open('mailto:affanhabeeb8@gmail.com', '_blank')}>
                       <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                         <Mail className="w-4 h-4 text-primary" />
                       </div>
                       <div>
                         <p className="font-medium">Email</p>
-                        <p className="text-sm text-muted-foreground">affanhabeeb8@gmail.com</p>
+                        <a href="mailto:affanhabeeb8@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">affanhabeeb8@gmail.com</a>
                       </div>
                     </div>
                     
