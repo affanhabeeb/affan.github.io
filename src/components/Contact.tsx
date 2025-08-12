@@ -7,19 +7,19 @@ const Contact = () => {
     {
       name: "LinkedIn",
       icon: <Linkedin className="w-5 h-5" />,
-      url: "#",
+      url: "https://in.linkedin.com/in/affan-habeeb-705375159",
       description: "Professional network and career updates"
     },
     {
       name: "GitHub",
       icon: <Github className="w-5 h-5" />,
-      url: "#",
+      url: "https://github.com/affanhabeeb/",
       description: "Code repositories and projects"
     },
     {
       name: "Email",
       icon: <Mail className="w-5 h-5" />,
-      url: "mailto:affan.habeeb@example.com",
+      url: "mailto:affanhabeeb8@gmail.com",
       description: "Direct communication for opportunities"
     }
   ];
@@ -71,7 +71,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <p className="font-medium">Email</p>
-                        <p className="text-sm text-muted-foreground">affan.habeeb@example.com</p>
+                        <p className="text-sm text-muted-foreground">affanhabeeb8@gmail.com</p>
                       </div>
                     </div>
                     
